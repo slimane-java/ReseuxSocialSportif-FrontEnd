@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-navbar>
+   
+    <ion-title>Inscription</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<div calss="R">
+  <div class="R1" id="I1">
+      
+          <div class="form-group">
+              <label >Username</label>
+              <input type="text" class="form-control" id="Username" [(ngModel)]='Username'  placeholder="Enter User Name" name="Username"
+              #myName="ngModel">
+             </div>
+          <div class="form-group">
+            <label >Email address</label>
+            <input type="email" class="form-control" id="Email" [(ngModel)]='Email'  placeholder="Enter email"  name="Email">
+           </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" id="Password" [(ngModel)]='Password' placeholder="Password"  name="Password">
+          </div>
+
+          <div class="form-group">
+              <label >Confermer Password</label>
+              <input type="password" class="form-control" id="Copassword" [(ngModel)]='confermePas' placeholder="Confirmer Password"  name="confermePas">
+            </div>
+          
+          <button type="submit" class="btn btn-primary" (click)=" Suivent()">Suivent</button>
+        
+  </div>
+  <div class="R2" id="I2">
+      <div class="form-group">
+          <label >Name</label>
+          <input type="text" class="form-control" id="Nom" [(ngModel)]='Nom' name="Nom"  placeholder="Enter  Name">
+         </div>
+      <div class="form-group">
+        <label >Prenom</label>
+        <input type="Text" class="form-control" id="prenom"   [(ngModel)]="Prenom" name="Prenom" placeholder="Enter Prenom">
+         </div>
+      <div class="form-group">
+        <label >DateNaissence</label>
+        <input type="date" class="form-control" id="DateNaissence"  [(ngModel)]='dateNaisence' name="dateNaisence" placeholder="DateNaissence">
+      </div>
+
+      <div class="form-group">
+          <label >Telephone</label>
+          <input type="text" class="form-control" id="Tele" name="Tele" [(ngModel)]='Tele' name="Tele" placeholder="Entre Telephone">
+        </div>
+
+        
+      <div class="form-group">
+          <label >Adresse</label>
+          <input type="text" class="form-control" id="Adresse"  name="Adresse"  [(ngModel)]='Adresse'placeholder="Entre Adresse">
+        </div>
+
+        <div class="form-group">
+          <label >Ville</label>
+          <input type="text" class="form-control" id="ville"  name="ville"  [(ngModel)]='ville' placeholder="Entre Ville">
+        </div>
+
+      <div class="button">
+      <button type="submit" class="btn btn-primary" (click)="Suivent()">Suivent</button>
+      <button type="submit" class="btn btn-primary" (click)=" President()">President</button>
+      </div>
+  </div>
+  <div class="R3" id="I3">
+      <div class="form-group">
+          <label >Photo</label>
+          <input type="text" class="form-control" id="Photo" [(ngModel)]='Photo' name="Photo"  placeholder="Entre Telephone">
+        </div>
+        <div class="button">
+            <button type="submit" class="btn btn-primary" (click)="Suivent()">Suivent</button>
+            <button type="submit" class="btn btn-primary" (click)=" President()">President</button>
+            </div>
+  </div>
+</div>  

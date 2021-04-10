@@ -1,0 +1,76 @@
+<ion-header>
+        <ion-navbar>
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <ion-title>Home</ion-title>
+        </ion-navbar>
+      </ion-header>
+
+        
+         <div class="R">
+             <div class="R1">
+          <ion-item>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4>Your Profile</h4>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form>
+                                          <div class="form-group row">
+                                            <label for="Titre" class="col-4 col-form-label">Titre</label> 
+                                            <div class="col-8">
+                                              <input id="Titre" [(ngModel)]='Titre' name="Titre" placeholder="Titre" class="form-control here" required="required" type="text">
+                                            </div>
+                                          </div>
+                                          <div class="form-group row">
+                                            <label for="DateCreation" class="col-4 col-form-label"> Date Creation</label> 
+                                            <div class="col-8">
+                                              <input id="DateCreation" [(ngModel)]='DateCreation' name="DateCreation" placeholder="DateCreation" class="form-control here" type="date">
+                                            </div>
+                                          </div>
+                                          <div class="form-group row">
+                                            <label for="Discription" class="col-4 col-form-label">Discription</label> 
+                                            <div class="col-8">
+                                              <input id="Discription"  [(ngModel)]="Discription" name="Discription" placeholder="Discription" class="form-control here" type="text">
+                                            </div>
+                                          </div>
+                                          <div class="form-group row">
+                                            <label for="nbJoure" class="col-4 col-form-label">Nombre de Joureur</label> 
+                                            <div class="col-8">
+                                              <input id="nbJoure"  [(ngModel)]='nbJoure' name="nbJoure" placeholder="Nombre de Joureur" class="form-control here" type="number">
+                                            </div>
+                                          </div>
+
+                                          <div class="form-group row">
+                                            <label for="Photo" class="col-4 col-form-label">Photo</label> 
+                                            <div class="col-8">
+                                              <input id="nbJoure"  [(ngModel)]='Photo' name="Photo" placeholder="Ph4" class="form-control here" type="text">
+                                            </div>
+                                          </div>
+
+                                          <div class="button">
+                                              <button type="submit" class="btn btn-primary" (click)="Ajouter()">Ajouter</button>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </ion-item>
+          </div>
+          </div>
+          

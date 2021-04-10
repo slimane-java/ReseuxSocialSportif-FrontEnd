@@ -1,0 +1,30 @@
+page-Inscription{
+    .R
+    {
+        position: relative;
+        height: 100%;;
+        width: 100%;
+        display: block;
+    }
+
+    .R1
+    {
+        position: absolute;
+        top:150px;
+        width: 100%;
+
+    }
+    .R2
+    {
+        position: absolute;
+        top:150px;
+        width: 100%;
+        visibility: hidden;
+    }
+    .R3
+    {
+        position: absolute;
+        top:150px;
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,54 @@
+
+
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+  <div class="R">
+  <div class="R1">
+      <div padding>
+          <ion-segment [(ngModel)]="pet">
+      
+            <ion-segment-button value="Home">
+             Home
+            </ion-segment-button>
+            <ion-segment-button value="Message">
+              Message
+            </ion-segment-button>
+            <ion-segment-button value="Notifaction">
+              Notifaction
+            </ion-segment-button>
+          </ion-segment>
+        </div>
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'Home'">
+      <ion-item>
+      
+      </ion-item>
+      ...
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Message'">
+        <ion-item>
+           
+        </ion-item>
+        ...
+      </ion-list>
+  
+    <ion-list *ngSwitchCase="'Notifaction'">
+        <ion-list>
+            <ion-item>
+             
+            </ion-item>
+          </ion-list>
+ 
+    </ion-list>
+  </div>
+</div>
+</div>
